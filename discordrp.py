@@ -87,7 +87,7 @@ class DiscordStatusMessage(EventPlugin):
     def uploadtocatbox(self, uri):
         loop = asyncio.get_event_loop()
         img = Image.open(unquote(urlparse(uri).path)); img = img.convert('RGB')
-        img = img.resize((60, 60)) # 60x60 might seem low but it's the size of the large image preview
+        img = img.resize((256, 256)) # originally was 60x60 "might seem low but it's the size of the large image preview", but it doesn't seem discord requires it to be actually that small
         img.save('/tmp/quodlibet-albumart.jpg', optimize=True, quality=75)
         try:
             return requests.post("https://litterbox.catbox.moe/resources/internals/api.php", timeout=10,
