@@ -1,4 +1,10 @@
 # a discord rich presence plugin for [quod libet](https://github.com/quodlibet/quodlibet)
+> by air-eat <3
+
+Forked to basically just up the size of the album art.
+
+<br>
+
 ![example](docs/example.gif)
 
 this is a version of [quod libet's discord rpc plugin](https://github.com/quodlibet/quodlibet/blob/main/quodlibet/ext/events/discord_status.py) that i (heavily) modified to add time left, a slider using a button ~~and album art~~
